@@ -4,6 +4,7 @@ import React from "react";
 const AdminLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <section>
+      {/* @ts-expect-error Server Component */}
       <AdminNavbar />
       <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">{children}</div>
     </section>
