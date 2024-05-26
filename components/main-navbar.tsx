@@ -21,14 +21,14 @@ const MainNavbar = async () => {
 
       <NavbarContent className="sm:hidden p-3" justify="center">
         <h1 className="text-center text-3xl text-slate-600 font-bold my-5">
-          <span className="text-primary">U</span>Social{" "}
+          <span className="text-primary">interiors</span>islife
         </h1>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4 mr-4" justify="center">
         <NavbarBrand className="mr-4">
           <h1 className="text-center text-3xl text-slate-600 font-bold my-5">
-            <span className="text-primary">U</span>Social{" "}
+            <span className="text-primary">interiors</span>islife
           </h1>
         </NavbarBrand>
         <NavbarItem></NavbarItem>

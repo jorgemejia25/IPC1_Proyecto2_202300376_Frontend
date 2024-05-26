@@ -16,7 +16,10 @@ interface EntryProps {
   hideButtons?: boolean;
 }
 
-const EntryView: React.FC<EntryProps> = ({ entry, hideButtons: showButtons }) => {
+const EntryView: React.FC<EntryProps> = ({
+  entry,
+  hideButtons: showButtons,
+}) => {
   const date = new Date(entry.createdAt);
 
   const formattedDate = new Intl.DateTimeFormat("es-ES", {
@@ -74,16 +77,14 @@ const EntryView: React.FC<EntryProps> = ({ entry, hideButtons: showButtons }) =>
           <div className="text-slate-400">Categoría: {entry.category}</div>
         </div>
       </div>
-      {showButtons && (
-        <div className="flex gap-3 my-2">
-          <LikeButton onPressed={onLikeClick} isLiked={like} />
-          <CommentButton
-            onPressed={() => {
-              setCommentView(!commentView);
-            }}
-          />
-        </div>
-      )}
+      <div className="flex gap-3 my-2">
+        <LikeButton onPressed={onLikeClick} isLiked={like} />
+        <CommentButton
+          onPressed={() => {
+            setCommentView(!commentView);
+          }}
+        />
+      </div>
       {commentView && <CommentView postId={entry._id} />}
     </article>
   );

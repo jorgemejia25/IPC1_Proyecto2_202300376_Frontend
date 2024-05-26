@@ -2,6 +2,7 @@
 
 import {
   ArcElement,
+  BarElement,
   CategoryScale,
   Chart as ChartJS,
   LineElement,
@@ -19,7 +20,8 @@ ChartJS.register(
   PointElement,
   ArcElement,
   LineElement,
-  Tooltip
+  Tooltip,
+  BarElement
 );
 
 interface CustomPieChartProps {
@@ -38,7 +40,7 @@ const CustomPieChart: React.FC<CustomPieChartProps> = ({
   // legend
   return (
     <>
-      <Pie data={data} />   
+      <Pie data={data} />
     </>
   );
 };

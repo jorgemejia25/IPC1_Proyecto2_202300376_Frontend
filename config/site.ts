@@ -1,6 +1,6 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "USocial",
+  name: "interiorsislife",
   description: "Enterate de todo lo que pasa en la universidad.",
 };

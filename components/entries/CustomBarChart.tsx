@@ -11,6 +11,8 @@ import {
   Tooltip,
 } from "chart.js";
 
+import React from "react";
+
 // Register ChartJS components using ChartJS.register
 ChartJS.register(
   CategoryScale,
@@ -20,28 +22,20 @@ ChartJS.register(
   Tooltip
 );
 
-const CustomBarChart = () => {
+interface CustomBarChartProps {
+  data: {
+    labels: string[];
+    datasets: {
+      data: number[];
+      backgroundColor: string[];
+    }[];
+  };
+}
+
+const CustomBarChart: React.FC<CustomBarChartProps> = ({ data }) => {
   return (
     <div>
-      <Bar
-        data={{
-          labels: [
-            "2023-01",
-            "2023-02",
-            "2023-03",
-            "2023-04",
-            "2023-05",
-            "2023-06",
-            "2023-07",
-          ],
-          datasets: [
-            {
-              data: [100, 120, 115, 134, 168, 132, 200],
-              backgroundColor: "purple",
-            },
-          ],
-        }}
-      />
+      <Bar data={data} />
     </div>
   );
 };

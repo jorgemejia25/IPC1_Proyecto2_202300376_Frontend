@@ -24,17 +24,14 @@ const LoginPage = () => {
   });
 
   return (
-    <div className="flex flex-col md:flex-row h-screen">
+    <div className="flex flex-col h-screen items-center">
       <form
         action={formAction}
         className="w-full h-screen md:w-1/2 px-6  md:px-16 lg:px-32 flex flex-col justify-center"
       >
         <h1 className="text-center text-5xl text-slate-600 font-bold my-5">
-          <span className="text-primary">U</span>Social
+          <span className="text-primary">interiors</span>islife
         </h1>
-        <p className="text-center text-xl font-medium text-slate-400 mb-12">
-          La red social más grande para todos los encapuchados
-        </p>
         <h2 className="font-semibold text-4xl text-slate-600">Inicia sesión</h2>
         <p className="text-xl text-slate-500 my-4">
           Ingresa tus datos para continuar
@@ -97,26 +94,6 @@ const LoginPage = () => {
           </p>
         </div>
       </form>
-      <div className="w-full md:w-1/2 h-full hidden md:flex py-10 md:pr-10 lg:pr-20">
-        <div className="w-full h-full relative rounded-3xl overflow-hidden">
-          <Image
-            src="/login.gif"
-            alt="imagen de login"
-            layout="fill"
-            objectFit="cover"
-          />
-          <div
-            className="bg-primary-400 opacity-50"
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              height: "100%",
-              width: "100%",
-            }}
-          />
-        </div>
-      </div>
     </div>
   );
 };

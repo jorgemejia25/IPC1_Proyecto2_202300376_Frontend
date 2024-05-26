@@ -5,23 +5,12 @@ export default function Home() {
     <section>
       <MainNavbar></MainNavbar>
 
-      <div className="flex w-full h-screen flex-col items-center justify-between">
-        <div className="mt-24">
-          Desarrollado por: Jorge Andrés Mejía - 202300376
-        </div>
-
+      <div className="flex w-full h-screen flex-col items-center justify-center">
         <div className="text-center">
           <h1 className="text-center text-7xl  text-slate-600 font-black my-5">
-            <span className="text-primary">U</span>Social{" "}
+            <span className="text-primary">interiors</span>islife
           </h1>
-          <h3 className="text-xl">
-            Una red social para todos los San Carlistas.
-          </h3>
-        </div>
-
-        <div className="mb-10 text-center">
-          <div>Derechos Registrados: jorgis S.A </div>
-          <div>Soporte: Rodri Porón</div>
+          <h3 className="text-xl">A blog for the interiors.</h3>
         </div>
       </div>
     </section>

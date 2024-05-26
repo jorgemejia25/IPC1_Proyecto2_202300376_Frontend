@@ -35,7 +35,7 @@ const AdminNavbar = async () => {
       <NavbarContent className="hidden sm:flex gap-4 mr-4" justify="center">
         <NavbarBrand className="mr-4">
           <h1 className="text-center text-3xl text-slate-600 font-bold my-5">
-            <span className="text-primary">U</span>Social{" "}
+            <span className="text-primary">interiors</span>islife{" "}
             <span className="text-lg text-slate-400">Admin</span>
           </h1>
         </NavbarBrand>
@@ -54,7 +54,7 @@ const AdminNavbar = async () => {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} href="/admin/data" variant="flat">
+          <Button as={Link} href="/admin" variant="flat">
             Generar reportes
           </Button>
         </NavbarItem>
