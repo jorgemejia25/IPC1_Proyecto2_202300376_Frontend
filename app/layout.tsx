@@ -5,6 +5,7 @@ import MainNavbar from "@/components/main-navbar";
 import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
 import { Nunito } from "next/font/google";
 import { Providers } from "./providers";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body>
         <Providers themeProps={{ attribute: "class", defaultTheme: "white" }}>
           <Analytics />
+          <SpeedInsights />
           <main className="text-foreground">{children}</main>
         </Providers>
       </body>
