@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 
+import { Analytics } from "@vercel/analytics/react";
 import MainNavbar from "@/components/main-navbar";
 import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
 import { Nunito } from "next/font/google";
@@ -35,6 +36,7 @@ export default function RootLayout({
       <head />
       <body>
         <Providers themeProps={{ attribute: "class", defaultTheme: "white" }}>
+          <Analytics />
           <main className="text-foreground">{children}</main>
         </Providers>
       </body>

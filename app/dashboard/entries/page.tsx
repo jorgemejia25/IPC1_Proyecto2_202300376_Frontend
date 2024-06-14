@@ -16,6 +16,8 @@ const EntriesPage = () => {
     (async () => {
       const response = await getEntries();
 
+      console.log(response);
+
       setEntries(response);
     })();
   }, []);

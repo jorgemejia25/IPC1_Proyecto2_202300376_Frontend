@@ -12,5 +12,7 @@ export const getEntries = async (): Promise<Entry[]> => {
     cookies().get("token")?.value
   );
 
+  console.log(response.data);
+
   return response.data;
 };
