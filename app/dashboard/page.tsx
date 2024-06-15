@@ -8,7 +8,7 @@ import { Spinner } from "@nextui-org/spinner";
 import { getTrendingEntries } from "../actions/entries/getTrendingEntries";
 
 const TrendingsPage = () => {
-  const [entries, setEntries] = useState<Entry[] | null>(null);
+  const [entries, setEntries] = useState<Entry[] | null>([]);
 
   useEffect(() => {
     (async () => {

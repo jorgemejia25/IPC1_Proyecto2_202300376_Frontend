@@ -1,9 +1,10 @@
 import "@/styles/globals.css";
 
+import { Inter, Nunito } from "next/font/google";
+
 import { Analytics } from "@vercel/analytics/react";
 import MainNavbar from "@/components/main-navbar";
 import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
-import { Nunito } from "next/font/google";
 import { Providers } from "./providers";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { siteConfig } from "@/config/site";
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-const montserrat = Nunito({
+const montserrat = Inter({
   weight: ["400", "500", "700"],
   subsets: ["latin"],
 });

@@ -16,7 +16,7 @@ import { Entry } from "@/utils/interfaces/entry";
 import { getTop5Entries } from "@/app/actions/entries/getTop5Entries";
 
 const DataPage = () => {
-  const [entries, setEntries] = useState<Entry[]>();
+  const [entries, setEntries] = useState<Entry[]>([]);
   const [categories, setCategories] = useState<CategoryCountResponse[]>();
   const [users, setUsers] = useState<UserCountResponse[]>();
 

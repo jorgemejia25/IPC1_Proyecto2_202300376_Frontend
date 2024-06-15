@@ -10,7 +10,7 @@ import { getEntries } from "@/app/actions/entries/getEntries";
 import { useSearchParams } from "next/navigation";
 
 const EntriesPage = () => {
-  const [entries, setEntries] = useState<Entry[] | null>(null);
+  const [entries, setEntries] = useState<Entry[] | null>([]);
 
   useEffect(() => {
     (async () => {

@@ -5,12 +5,24 @@ export default function Home() {
     <section>
       <MainNavbar></MainNavbar>
 
-      <div className="flex w-full h-screen flex-col items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-center text-7xl  text-slate-600 font-black my-5">
-            <span className="text-primary">interiors</span>islife
+      <div
+        className="flex w-full h-screen flex-col items-center justify-center"
+        style={{
+          backgroundImage: 'url("/header.png")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="">
+          <h1
+            className=" text-7xl font-black my-5 leading-snug mt-48 tracking-wider"
+            style={{
+              color: "#3f73b6",
+            }}
+          >
+            INTERIORS IS <br /> LIFE
           </h1>
-          <h3 className="text-xl">A blog for the interiors.</h3>
         </div>
       </div>
     </section>
